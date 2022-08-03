@@ -145,21 +145,61 @@ avgNum(array2)
 ///11.	Write a function that takes two arrays of numbers and returns true 
 // if the average of the elements in the first array is greater than the average of the elements in the second array.
 
-let arrayFirst = [3, 3, 6];
-let arraySecond = [2, 4, 4, 6];
+let arrayFirst = [5, 10, 10, 10, 15];
+let arraySecond = [3, 3, 6];
 let sumA = 0;
 let sumB = 0;
 
 function questionEleven(arrayA, arrayB){
-    if ((for(let i = 0; i < arrayA.length; i++){
-        sumA += arrayA[i];
+    for(let i = 0; i < arrayA.length; i++){
+        sumA+=arrayA[i];
     }
-    console.log) > (for(let i = 0; i < arrayB.length; i++){
-        sumB += arrayB[i];
+    console.log(sumA);
+    for(let i = 0; i < arrayB.length; i++){
+        sumB+=arrayB[i];
     }
-    console.log)){
-        return true;
+    console.log(sumB);
+    let aveA = sumA / arrayA.length;
+    console.log(aveA);
+    let aveB = sumB / arrayB.length;
+    console.log(aveB);
+
+    if(aveA > aveB){
+        console.log (true)
+    } else {
+        console.log (false)
     }
 }
-
 questionEleven(arrayFirst, arraySecond)
+
+
+///12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, 
+// and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+
+ function willBuyDrink(isHotOutside, moneyInPocket){
+    if (isHotOutside = true && moneyInPocket >= 10.50){
+        console.log (true); 
+        return true;
+    } else {
+        console.log (false);
+        return false;
+    }
+ }
+
+ willBuyDrink(true, 11.55)
+
+///13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
+ function feedCat(alreadyFed, howManyTimes){
+    if (alreadyFed = true && howManyTimes >= 3){
+        console.log (false + " Do not feed, because cat has been fed");
+        return false;
+    } else {
+        console.log (true + " Feed, because cat is hungry");
+        return true;
+    }
+ }
+  feedCat(true, 1)
+
+// I created this problem because my cat acts as though she has not been fed when she has, in fact, been fed three times.
